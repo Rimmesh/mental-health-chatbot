@@ -1,0 +1,828 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: azure;
+    --light-color: linear-gradient(to right, #CBE4F7 1%, #ECD8EB 59%, #F3B7DB 100%);
+    --dark-color: #371313;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--light-color);
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*navbar*/
+.navbar {
+    background: var(--light-color);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;   
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+.navbar .logo {
+    width: 25%;
+}
+
+
+/*hero*/
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background: url('../images/Hero.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content {
+    width: 70%;
+    font-family: 'Rammetto One', sans-serif;
+}
+
+.hero .hero-text {
+    width: 70%;
+    margin-bottom: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar ul div a:hover {
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+/*part1*/
+.part1 {
+    margin-bottom: 0px;
+}
+
+.part1 .container-sm {
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 32px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/*part2*/
+.part2 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.part2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part2 .container .image-box {
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin-right: 10px;
+}
+
+.part2 .container .text-box {
+    flex: 1;
+    padding: 20px;
+    font-size: 28px;
+    color: #111;
+    font-family: 'Rammetto One',cursive;
+    text-align: center;
+}
+
+.part2 .container .text-box img {
+    width: 100%;
+    height: auto;
+}
+
+/*part11*/
+.part11 {
+    margin-bottom: 0px;
+}
+
+.part11 .container-sm {
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 32px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+ /*part3*/
+.part3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url('../images/part3.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180vh;
+    color: var(--light-color);
+    position: relative;
+}
+
+.part3 .text-container {
+    color: azure;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.part3 .text-container .text1 {
+    font-family: 'Rammetto One', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+    mix-blend-mode: screen;
+}
+
+.part3 .text-container .text2 {
+    font-size: 18px;
+    mix-blend-mode: screen;
+}
+
+
+
+
+/* Testimonials */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+.testimonials {
+    padding: 40px 0;
+  }
+  
+  
+  
+  .testimonials .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  
+/*part12*/
+.part12 {
+    margin-bottom: 0px;
+}
+
+.part12 .container-sm {
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 32px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/*FAQS*/
+.faq {
+    padding: 40px 0;
+    width: 100%;
+    transform: scale(0.96);
+}
+
+.faq .faq-group {
+    border-bottom: 1px solid #371313;
+    padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+    padding: 20px 0;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.faq .faq-group .faq-group-header h5 {
+    font-weight: 600;
+    width: 95%;
+}
+
+.faq .faq-group .faq-group-header i {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.faq .faq-group .faq-group-body {
+    display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+    display: block;
+}
+
+.faq ul.faq-menu {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #371313;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+    background: #CBE4F7;
+    color: #371313;
+}
+
+/*footer*/
+.footer {
+    padding: 40px 0;
+}
+
+.footer h6 {
+    margin-bottom: 10px;
+    font-family: 'Rammetto One', cursive;
+    font-size: 16px;
+}
+
+.footer ul li {
+    line-height: 2.5;
+}
+
+.footer a {
+    color: var(--light-color);
+    font-size: 16px;
+}
+
+.footer a img {
+    width: 200px;
+    height: auto;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .card {
+    margin: 20px 30px 30px 0;
+}
+
+.footer input[type='email'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/*loggin*/
+.modal-hidden {
+    display: none;
+}
+
+.modal-visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#loginModal .wrapper {
+    position: relative;
+    width: 400px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#loginModal .wrapper .form-box {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+#loginModal .wrapper .form-box.active {
+    display: block;
+}
+
+#loginModal .wrapper .icon-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background: #371313;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#loginModal .wrapper .icon-close:hover,
+#loginModal .wrapper .icon-close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#loginModal .wrapper .form-box h2 {
+    font-size: 2em;
+    color: #371313;
+    text-align: center;
+}
+
+#loginModal .wrapper .form-box .input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#loginModal .wrapper .form-box .input-box input {
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #371313;
+    outline: none;
+    font-size: 1rem;
+    color: #371313;
+    font-weight: 600;
+}
+
+#loginModal .wrapper .form-box .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #371313;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#loginModal .wrapper .form-box .input-box input:focus ~ label,
+#loginModal .wrapper .form-box .input-box input:valid ~ label {
+    top: -5px;
+}
+
+#loginModal .wrapper .form-box .input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #371313;
+}
+
+#loginModal .wrapper .form-box .remember-forgot {
+    font-size: 0.9em;
+    color: #371313;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#loginModal .wrapper .form-box .remember-forgot label input {
+    accent-color: #371313;
+    margin-right: 3px;
+}
+
+#loginModal .wrapper .form-box .remember-forgot a {
+    color: #371313;
+    text-decoration: none;
+}
+
+#loginModal .wrapper .form-box .remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+#loginModal .wrapper .form-box .btnlog {
+    width: 100%;
+    height: 45px;
+    background: #371313;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+}
+
+#loginModal .wrapper .form-box .login-register {
+    font-size: 0.9em;
+    color: #371313;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+#loginModal .wrapper .form-box .login-register a {
+    color: #371313;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#loginModal .wrapper .form-box .login-register a:hover {
+    text-decoration: underline;
+}
+
+
+/* About Us Modal */
+#aboutUsModal.modal-hidden {
+    display: none;
+}
+
+#aboutUsModal.modal-visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#aboutUsModal .wrapper {
+    position: relative;
+    width: 400px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#aboutUsModal .form-box {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+#aboutUsModal .icon-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background: #371313;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#aboutUsModal .icon-close:hover,
+#aboutUsModal .icon-close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#aboutUsModal .form-box h2 {
+    font-size: 2em;
+    color: #371313;
+    text-align: center;
+}
+
+#aboutUsModal .form-box p {
+    font-size: 1em;
+    color: #371313;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Card */
+.card {
+    background: var(--light-color);
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+/*buttons*/
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: #84CCCC;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: #84CCCC;
+    color: #333;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: azure;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/*text color */
+.hero-heading1 {
+    color: #84CCCC;
+}
+
+.hero-heading2 {
+    color: #111;
+}
+
+ /* text classes*/
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ /* background */
+.bg-primary {
+    background: #371313;
+    color: white; 
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: white;
+}
+
+.bg-dark {
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.bg-black {
+    background: black;
+    color: white;
+}
+
+ /*text*/
+h1 span, h2 span, h3 span, h4 span, p span {
+    display: block;
+}
+
+
+
+/*testimonials*/
+.testimonials {
+    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.testimonials-heading {
+    text-align: center;
+    color: #371313;
+    flex: 1;
+    padding: 20px;
+    font-size: 28px;
+    font-family: 'Rammetto One',cursive;
+}
+
+.swiper-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    color: #371313;
+    margin-right: 50px;
+}
+
+.swiper-slide p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.swiper-slide p:last-child {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.swiper-pagination-bullet {
+    background: #007bff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0056b3;
+}
+
+
+
+
+/*tabs*/
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #371313;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tab {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.tab:hover,
+.tab:focus,
+.tab:active {
+    background-color: #555;
+}
+
+.tab.active {
+    background-color: #aabbff;
+    color: #371313;
+}
